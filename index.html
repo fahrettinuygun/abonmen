@@ -1,1 +1,130 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ABONMEN</title>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+      body {
+       background-size:100px;
+        padding: 0px;
+        margin: 0px;
+      }
+      .main {
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+      }
+      .mainTop{
+        color: #424242;
+        height: 50vh;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+      }
+      .mainBottom{
+        height: 50vh;
+        background-color: #ffca28;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+      }
+      .triangle{
+        height: 0;
+        width: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #ffca28;
+      }
+      .storeIcon{
+          max-height: 30vh;
+          max-width: 30vw;
+      }
+      .storeDiv {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+      }
+      .mailLink{
+          color: #424242;
+          text-decoration: none;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          background-color: white;
+          border-radius: 100px;
+          padding: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      }
+      .mailIcon {
+          height: 20px;
+          margin-right: 5px;
+          color: #424242;
+      }
+      .slogan{
+          font-family: 'Courier New', Courier, monospace;
+      }
+      .appName{
+        font-size: xxx-large;
+        padding: 0px;
+        margin: 0px;
+      }
+      .mainTopContent{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .mailDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+  </style>
+  <style type="text/css">.logo {
+      max-width: 120px;
+      max-height: 120px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSItMTAgMCA1MTIgNTEyLjAwMTExIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ4MC45NzI2NTYgMi43MzgyODFjLTEwLjIzMDQ2OC01Ljc2MTcxOS0yMy4xOTE0MDYtMi4xMzY3MTktMjguOTQ5MjE4IDguMDg5ODQ0bC0yNC42NDQ1MzIgNDMuNzU3ODEzYzE0LjUxOTUzMiAxNC43MDcwMzEgMjAuOTA2MjUgMzUuNjQ0NTMxIDE3LjM2NzE4OCA1NS43NzM0MzdsNDQuMzEyNS03OC42NzE4NzVjNS43NjE3MTgtMTAuMjI2NTYyIDIuMTM2NzE4LTIzLjE4NzUtOC4wODU5MzgtMjguOTQ5MjE5em0wIDAiLz48cGF0aCBkPSJtNDAwLjk3MjY1NiAyNTIuODcxMDk0LTU4LjQxNzk2OC0xLjk2NDg0NCA2LjMzMjAzMS00NS4zMzIwMzEgMS44MTY0MDYgMzEuODQ3NjU2IDE5LjU1NDY4Ny42NTYyNSAxNC44NjMyODItMjUuMTI1YzcuOTEwMTU2LTEzLjM3NSA1LjIxMDkzNy0zMC4wNzQyMTktNS41NzAzMTMtNDAuMzU1NDY5bDE2Ljg3MTA5NC0xMS4zNzEwOTRjLTQuNjU2MjUgMS4wODIwMzItOS40NjA5MzcgMS42NTIzNDQtMTQuMzMyMDMxIDEuNjUyMzQ0LTEzLjc4MTI1IDAtMjcuNTI3MzQ0LTQuNTMxMjUtMzguOTQ5MjE5LTEzLjM4NjcxOC03LjI1MzkwNiA4LjkyMTg3NC0yMTIuOTcyNjU2IDI2MS44OTA2MjQtMjIzLjMzNTkzNyAyNzQuNjM2NzE4LTguNDg0Mzc2IDEwLjQzMzU5NC0yMi41MDc4MTMgMTQuNDI1NzgyLTM1LjIzODI4MiA5Ljk5MjE4OGwtMzQuNDg0Mzc1IDM1LjQ0MTQwNmMtOS42MzI4MTIgOS44OTg0MzgtOS40MTQwNjIgMjUuNzI2NTYyLjQ4NDM3NSAzNS4zNTU0NjkgOS44OTQ1MzIgOS42MjUgMjUuNzIyNjU2IDkuNDE3OTY5IDM1LjM1NTQ2OS0uNDg0Mzc1bDEwMC4zNTU0NjktMTAzLjE0NDUzMmMxLjE0MDYyNS0xLjE2Nzk2OCAyLjE2NDA2Mi0yLjQ0OTIxOCAzLjA1MDc4MS0zLjgxNjQwNiA1Mi4wMTE3MTktODAuMTA5Mzc1IDQ4LjY0ODQzNy03NC44NTkzNzUgNDkuMjk2ODc1LTc1Ljk1NzAzMWwxNC4xOTUzMTIgOC4zOTQ1MzEgMTIuMDI3MzQ0IDc1LjA3ODEyNS02My4zMzIwMzEgNTIuNTY2NDA3Yy0xMC42MjUgOC44MTY0MDYtMTIuMDg5ODQ0IDI0LjU4MjAzMS0zLjI2OTUzMSAzNS4yMDcwMzEgOC44NDM3NSAxMC42NjAxNTYgMjQuNjEzMjgxIDEyLjA2MjUgMzUuMjA3MDMxIDMuMjY5NTMxbDc0LjMwODU5NC02MS42NzU3ODFjNi44MDQ2ODctNS42NDQ1MzEgMTAuMTIxMDkzLTE0LjQ2NDg0NCA4LjcxODc1LTIzLjE5NTMxM2wtMTAuMzU5Mzc1LTY0LjY1MjM0NCAyMy41MTE3MTgtMzkuNzQ2MDkzYy0xLjgyODEyNC0uMDYyNS0xNy4xNTYyNS0uNTc4MTI1LTE4Ljg3ODkwNi0uNjM2NzE5LTIwLjAxOTUzMS0uNjcxODc1LTMzLjczNDM3NS0yMC40NDUzMTItMjcuMTc5Njg3LTM5LjYxMzI4MWwyMS4zNTU0NjktNTMuNDY0ODQ0LTcuNzM0Mzc2IDU1LjM2NzE4N2MtMS43NDIxODcgMTIuNDgwNDY5IDcuNzEwOTM4IDIzLjc1MzkwNyAyMC4zMzIwMzIgMjQuMTc5Njg4bDgyLjAxNTYyNSAyLjc2MTcxOWMuMjQyMTg3LjAwNzgxMi40ODQzNzUuMDExNzE5LjcyNjU2Mi4wMTE3MTkgMTEuNDA2MjUgMCAyMC44NDM3NS05LjA1MDc4MiAyMS4yMzA0NjktMjAuNTM1MTU3LjM5MDYyNS0xMS43MzQzNzUtOC43OTY4NzUtMjEuNTY2NDA2LTIwLjUyNzM0NC0yMS45NjA5Mzd6bTAgMCIvPjxwYXRoIGQ9Im0xMDguMDc4MTI1IDQxNC41ODk4NDQgMjIxLjU4OTg0NC0yNzIuNDg4MjgyLTE1LjI1LTkuMDE5NTMxYy0xMC40ODQzNzUtNi4yMDMxMjUtMjMuNjA1NDY5LTYuMDc4MTI1LTM0IC40Mzc1bC0yNzIuNTM5MDYzIDE3MC44NDM3NWMtOC44OTA2MjUgNS41NzQyMTktMTAuNTU0Njg3IDE3Ljg0NzY1Ny0zLjQ2NDg0NCAyNS41ODU5MzhsNzguMjM4MjgyIDg1LjM5MDYyNWM2LjkyNTc4MSA3LjU1ODU5NCAxOC45NTMxMjUgNy4yMDcwMzEgMjUuNDI1NzgxLS43NXptMCAwIi8+PHBhdGggZD0ibTQwNi44MTY0MDYgNTcuNTUwNzgxYy0yMy4xOTE0MDYtMTMuNzE4NzUtNTIuODYzMjgxLTUuODUxNTYyLTY2LjQwNjI1IDE3LjA0Mjk2OS0xMy42MzI4MTIgMjMuMDQ2ODc1LTYgNTIuNzc3MzQ0IDE3LjA0Mjk2OSA2Ni40MDYyNSAyMy4xOTE0MDYgMTMuNzE4NzUgNTIuODYzMjgxIDUuODUxNTYyIDY2LjQwNjI1LTE3LjA0Mjk2OSAxMy42Mjg5MDYtMjMuMDQ2ODc1IDYtNTIuNzc3MzQzLTE3LjA0Mjk2OS02Ni40MDYyNXptMCAwIi8+PC9zdmc+)}</style>
+</head>
+<body>
+    <div class="main">
+        <div class="mainTop">
+            <div class="mainTopContent">
+                <img class="logo" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSItMTAgMCA1MTIgNTEyLjAwMTExIiB3aWR0aD0iNTEycHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ4MC45NzI2NTYgMi43MzgyODFjLTEwLjIzMDQ2OC01Ljc2MTcxOS0yMy4xOTE0MDYtMi4xMzY3MTktMjguOTQ5MjE4IDguMDg5ODQ0bC0yNC42NDQ1MzIgNDMuNzU3ODEzYzE0LjUxOTUzMiAxNC43MDcwMzEgMjAuOTA2MjUgMzUuNjQ0NTMxIDE3LjM2NzE4OCA1NS43NzM0MzdsNDQuMzEyNS03OC42NzE4NzVjNS43NjE3MTgtMTAuMjI2NTYyIDIuMTM2NzE4LTIzLjE4NzUtOC4wODU5MzgtMjguOTQ5MjE5em0wIDAiLz48cGF0aCBkPSJtNDAwLjk3MjY1NiAyNTIuODcxMDk0LTU4LjQxNzk2OC0xLjk2NDg0NCA2LjMzMjAzMS00NS4zMzIwMzEgMS44MTY0MDYgMzEuODQ3NjU2IDE5LjU1NDY4Ny42NTYyNSAxNC44NjMyODItMjUuMTI1YzcuOTEwMTU2LTEzLjM3NSA1LjIxMDkzNy0zMC4wNzQyMTktNS41NzAzMTMtNDAuMzU1NDY5bDE2Ljg3MTA5NC0xMS4zNzEwOTRjLTQuNjU2MjUgMS4wODIwMzItOS40NjA5MzcgMS42NTIzNDQtMTQuMzMyMDMxIDEuNjUyMzQ0LTEzLjc4MTI1IDAtMjcuNTI3MzQ0LTQuNTMxMjUtMzguOTQ5MjE5LTEzLjM4NjcxOC03LjI1MzkwNiA4LjkyMTg3NC0yMTIuOTcyNjU2IDI2MS44OTA2MjQtMjIzLjMzNTkzNyAyNzQuNjM2NzE4LTguNDg0Mzc2IDEwLjQzMzU5NC0yMi41MDc4MTMgMTQuNDI1NzgyLTM1LjIzODI4MiA5Ljk5MjE4OGwtMzQuNDg0Mzc1IDM1LjQ0MTQwNmMtOS42MzI4MTIgOS44OTg0MzgtOS40MTQwNjIgMjUuNzI2NTYyLjQ4NDM3NSAzNS4zNTU0NjkgOS44OTQ1MzIgOS42MjUgMjUuNzIyNjU2IDkuNDE3OTY5IDM1LjM1NTQ2OS0uNDg0Mzc1bDEwMC4zNTU0NjktMTAzLjE0NDUzMmMxLjE0MDYyNS0xLjE2Nzk2OCAyLjE2NDA2Mi0yLjQ0OTIxOCAzLjA1MDc4MS0zLjgxNjQwNiA1Mi4wMTE3MTktODAuMTA5Mzc1IDQ4LjY0ODQzNy03NC44NTkzNzUgNDkuMjk2ODc1LTc1Ljk1NzAzMWwxNC4xOTUzMTIgOC4zOTQ1MzEgMTIuMDI3MzQ0IDc1LjA3ODEyNS02My4zMzIwMzEgNTIuNTY2NDA3Yy0xMC42MjUgOC44MTY0MDYtMTIuMDg5ODQ0IDI0LjU4MjAzMS0zLjI2OTUzMSAzNS4yMDcwMzEgOC44NDM3NSAxMC42NjAxNTYgMjQuNjEzMjgxIDEyLjA2MjUgMzUuMjA3MDMxIDMuMjY5NTMxbDc0LjMwODU5NC02MS42NzU3ODFjNi44MDQ2ODctNS42NDQ1MzEgMTAuMTIxMDkzLTE0LjQ2NDg0NCA4LjcxODc1LTIzLjE5NTMxM2wtMTAuMzU5Mzc1LTY0LjY1MjM0NCAyMy41MTE3MTgtMzkuNzQ2MDkzYy0xLjgyODEyNC0uMDYyNS0xNy4xNTYyNS0uNTc4MTI1LTE4Ljg3ODkwNi0uNjM2NzE5LTIwLjAxOTUzMS0uNjcxODc1LTMzLjczNDM3NS0yMC40NDUzMTItMjcuMTc5Njg3LTM5LjYxMzI4MWwyMS4zNTU0NjktNTMuNDY0ODQ0LTcuNzM0Mzc2IDU1LjM2NzE4N2MtMS43NDIxODcgMTIuNDgwNDY5IDcuNzEwOTM4IDIzLjc1MzkwNyAyMC4zMzIwMzIgMjQuMTc5Njg4bDgyLjAxNTYyNSAyLjc2MTcxOWMuMjQyMTg3LjAwNzgxMi40ODQzNzUuMDExNzE5LjcyNjU2Mi4wMTE3MTkgMTEuNDA2MjUgMCAyMC44NDM3NS05LjA1MDc4MiAyMS4yMzA0NjktMjAuNTM1MTU3LjM5MDYyNS0xMS43MzQzNzUtOC43OTY4NzUtMjEuNTY2NDA2LTIwLjUyNzM0NC0yMS45NjA5Mzd6bTAgMCIvPjxwYXRoIGQ9Im0xMDguMDc4MTI1IDQxNC41ODk4NDQgMjIxLjU4OTg0NC0yNzIuNDg4MjgyLTE1LjI1LTkuMDE5NTMxYy0xMC40ODQzNzUtNi4yMDMxMjUtMjMuNjA1NDY5LTYuMDc4MTI1LTM0IC40Mzc1bC0yNzIuNTM5MDYzIDE3MC44NDM3NWMtOC44OTA2MjUgNS41NzQyMTktMTAuNTU0Njg3IDE3Ljg0NzY1Ny0zLjQ2NDg0NCAyNS41ODU5MzhsNzguMjM4MjgyIDg1LjM5MDYyNWM2LjkyNTc4MSA3LjU1ODU5NCAxOC45NTMxMjUgNy4yMDcwMzEgMjUuNDI1NzgxLS43NXptMCAwIi8+PHBhdGggZD0ibTQwNi44MTY0MDYgNTcuNTUwNzgxYy0yMy4xOTE0MDYtMTMuNzE4NzUtNTIuODYzMjgxLTUuODUxNTYyLTY2LjQwNjI1IDE3LjA0Mjk2OS0xMy42MzI4MTIgMjMuMDQ2ODc1LTYgNTIuNzc3MzQ0IDE3LjA0Mjk2OSA2Ni40MDYyNSAyMy4xOTE0MDYgMTMuNzE4NzUgNTIuODYzMjgxIDUuODUxNTYyIDY2LjQwNjI1LTE3LjA0Mjk2OSAxMy42Mjg5MDYtMjMuMDQ2ODc1IDYtNTIuNzc3MzQzLTE3LjA0Mjk2OS02Ni40MDYyNXptMCAwIi8+PC9zdmc+" />
+                <div style="justify-content: center; align-items: center; text-align: center;">
+                    <span class="slogan">Cebinizin Süper Kahramanı</span>
+                    <h1 class="appName">ABONMEN</h1>
+                </div>
+                <div><h1>Çok Yakında Mobil Uygulama Mağazalarında</h1></div>
+            </div>
+            <div class="triangle"></div>
+        </div>
+        <div class="mainBottom">
+            <div class="storeDiv">
+                <img class="storeIcon" src="https://freepngimg.com/thumb/apple/58663-app-google-play-store-apple-download-hd-png.png">
+            </div>
+            <div class="mailDiv">
+                <a class="mailLink" href="https://mail.google.com/mail/?view=cm&fs=1&to=abonmenapp@gmail.com&su=SUBJECT&body=BODY&bcc=fufahrettinuygun@gmail.com">
+                    <img class="mailIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png">
+                    <span> abonmenapp@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  </script>
+</body>
+</html>
